@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <title>Terms of Service – Nexus Dev Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <svg
+      class="nexus-diag-filters"
+      aria-hidden="true"
+      focusable="false"
+      width="0"
+      height="0"
+      style="position: absolute; overflow: hidden"
+    >
+      <defs>
+        <filter id="nexus-diag-trailBloom" x="-130%" y="-130%" width="360%" height="360%">
+          <feTurbulence
+            id="nexus-diag-turb-a"
+            type="fractalNoise"
+            baseFrequency="0.055 0.038"
+            numOctaves="2"
+            seed="42"
+            result="noiseA"
+          />
+          <feDisplacementMap
+            in="SourceGraphic"
+            in2="noiseA"
+            scale="5.5"
+            xChannelSelector="R"
+            yChannelSelector="G"
+            result="displacedA"
+          />
+          <feGaussianBlur in="displacedA" stdDeviation="1.45" result="trailBlur" />
+          <feMerge>
+            <feMergeNode in="trailBlur" />
+            <feMergeNode in="displacedA" />
+          </feMerge>
+        </filter>
+        <filter id="nexus-diag-headGlow" x="-100%" y="-100%" width="300%" height="300%">
+          <feTurbulence
+            id="nexus-diag-turb-b"
+            type="fractalNoise"
+            baseFrequency="0.07 0.048"
+            numOctaves="2"
+            seed="43"
+            result="noiseB"
+          />
+          <feDisplacementMap
+            in="SourceGraphic"
+            in2="noiseB"
+            scale="3.8"
+            xChannelSelector="R"
+            yChannelSelector="G"
+            result="displacedB"
+          />
+          <feGaussianBlur in="displacedB" stdDeviation="0.42" result="hg" />
+          <feMerge>
+            <feMergeNode in="hg" />
+            <feMergeNode in="displacedB" />
+          </feMerge>
+        </filter>
+      </defs>
+    </svg>
+    <div
+      class="load-overlay"
+      id="load-overlay"
+      role="status"
+      aria-busy="true"
+      aria-live="polite"
+    >
+      <div class="load-overlay__ambient" aria-hidden="true"></div>
+      <div class="load-overlay__inner">
+        <div class="load-logo-stack">
+          <div class="load-logo-bloom" aria-hidden="true"></div>
+          <div class="load-brand-mark brand-mark" aria-hidden="true">
+            <span class="brand-icon-left"></span>
+            <div class="brand-diag-wrap">
+              <span class="brand-icon-diagonal"></span>
+              <svg class="brand-diag-trace" viewBox="0 0 200 8" preserveAspectRatio="none" aria-hidden="true">
+                <rect
+                  class="brand-diag-trace-ring"
+                  pathLength="100"
+                  x="0.9"
+                  y="0.9"
+                  width="198.2"
+                  height="6.2"
+                  rx="1"
+                  fill="none"
+                  stroke="rgba(255, 255, 255, 0.2)"
+                  stroke-width="0.9"
+                  stroke-linecap="round"
+                />
+                <rect
+                  class="brand-diag-trace-glow"
+                  pathLength="100"
+                  x="0.9"
+                  y="0.9"
+                  width="198.2"
+                  height="6.2"
+                  rx="1"
+                  fill="none"
+                  stroke="rgba(255, 255, 255, 0.58)"
+                  stroke-width="2.35"
+                  stroke-linecap="round"
+                  filter="url(#nexus-diag-trailBloom)"
+                />
+                <rect
+                  class="brand-diag-trace-core"
+                  pathLength="100"
+                  x="0.9"
+                  y="0.9"
+                  width="198.2"
+                  height="6.2"
+                  rx="1"
+                  fill="none"
+                  stroke="rgba(255, 255, 255, 0.98)"
+                  stroke-width="1.05"
+                  stroke-linecap="round"
+                  filter="url(#nexus-diag-headGlow)"
+                />
+              </svg>
+            </div>
+            <span class="brand-icon-right"></span>
+          </div>
+        </div>
+        <p class="load-tagline">Nexus Dev Studio</p>
+      </div>
+    </div>
+    <div class="scroll-progress" aria-hidden="true">
+      <div class="scroll-progress__fill" id="scroll-progress-fill"></div>
+    </div>
+    <div class="ambient-bg" aria-hidden="true">
+      <div class="ambient-blob ambient-blob--1"></div>
+      <div class="ambient-blob ambient-blob--2"></div>
+      <div class="ambient-blob ambient-blob--3"></div>
+    </div>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header legal-doc-header">
+      <div class="container header-inner">
+        <a href="index.html#home" class="brand brand--nav">
+          <div class="brand-mark" aria-hidden="true">
+            <span class="brand-icon-left"></span>
+            <div class="brand-diag-wrap">
+              <span class="brand-icon-diagonal"></span>
+              <svg class="brand-diag-trace" viewBox="0 0 200 8" preserveAspectRatio="none" aria-hidden="true">
+                <rect
+                  class="brand-diag-trace-ring"
+                  pathLength="100"
+                  x="0.9"
+                  y="0.9"
+                  width="198.2"
+                  height="6.2"
+                  rx="1"
+                  fill="none"
+                  stroke="rgba(255, 255, 255, 0.2)"
+                  stroke-width="0.9"
+                  stroke-linecap="round"
+                />
+                <rect
+                  class="brand-diag-trace-glow"
+                  pathLength="100"
+                  x="0.9"
+                  y="0.9"
+                  width="198.2"
+                  height="6.2"
+                  rx="1"
+                  fill="none"
+                  stroke="rgba(255, 255, 255, 0.58)"
+                  stroke-width="2.35"
+                  stroke-linecap="round"
+                  filter="url(#nexus-diag-trailBloom)"
+                />
+                <rect
+                  class="brand-diag-trace-core"
+                  pathLength="100"
+                  x="0.9"
+                  y="0.9"
+                  width="198.2"
+                  height="6.2"
+                  rx="1"
+                  fill="none"
+                  stroke="rgba(255, 255, 255, 0.98)"
+                  stroke-width="1.05"
+                  stroke-linecap="round"
+                  filter="url(#nexus-diag-headGlow)"
+                />
+              </svg>
+            </div>
+            <span class="brand-icon-right"></span>
+          </div>
+          <span class="brand-text">
+            <span class="brand-title">NE<span class="brand-accent">X</span>US</span>
+            <span class="brand-subtitle">
+              <span class="brand-accent">DEV</span>
+              <span class="brand-subtitle-light">STUDIO</span>
+            </span>
+          </span>
+          <span class="sr-only">Nexus Dev Studio — Home</span>
+        </a>
+        <a href="index.html" class="legal-back">← Back to home</a>
+      </div>
+    </header>
+
+    <main class="legal-page-wrap" id="main">
+      <article class="legal-page">
+        <h1 class="legal-title">Terms of Service – Nexus Dev Studio</h1>
+        <p class="legal-updated">Last updated: April 17, 2026</p>
+        <div class="legal-prose">
+          <p>By using this website, you agree to the following terms and conditions.</p>
+
+          <h2>1. Services</h2>
+          <p>Nexus Dev Studio provides web development services including:</p>
+          <ul>
+            <li>Website creation</li>
+            <li>Web applications</li>
+            <li>Booking systems</li>
+            <li>E-commerce solutions</li>
+          </ul>
+          <p>All services are customized based on client needs.</p>
+
+          <h2>2. Pricing</h2>
+          <p>All pricing displayed on this website is indicative and subject to change.</p>
+          <p>Final project pricing is determined after consultation and agreement with the client.</p>
+
+          <h2>3. Payments</h2>
+          <ul>
+            <li>Projects may require an initial deposit before work begins</li>
+            <li>Remaining balance is due upon completion unless otherwise agreed</li>
+          </ul>
+
+          <h2>4. Project Timeline</h2>
+          <p>Project timelines may vary depending on:</p>
+          <ul>
+            <li>Project complexity</li>
+            <li>Client feedback speed</li>
+            <li>Scope changes</li>
+          </ul>
+          <p>We aim to deliver projects as quickly as possible without compromising quality.</p>
+
+          <h2>5. Client Responsibilities</h2>
+          <p>Clients are responsible for:</p>
+          <ul>
+            <li>Providing accurate information</li>
+            <li>Supplying necessary content (text, images, etc.)</li>
+            <li>Giving timely feedback</li>
+          </ul>
+          <p>Delays in communication may affect delivery timelines.</p>
+
+          <h2>6. Intellectual Property</h2>
+          <p>
+            Upon full payment, the client owns the final project deliverables unless otherwise agreed.
+          </p>
+          <p>We reserve the right to showcase completed work in our portfolio.</p>
+
+          <h2>7. Limitation of Liability</h2>
+          <p>We are not responsible for:</p>
+          <ul>
+            <li>Business losses resulting from website use</li>
+            <li>Third-party service issues</li>
+            <li>Hosting or domain-related failures</li>
+          </ul>
+
+          <h2>8. Modifications</h2>
+          <p>We reserve the right to modify these terms at any time. Updates will be posted on this page.</p>
+
+          <h2>9. Contact</h2>
+          <p>
+            For any questions regarding these terms, contact:
+            <a href="mailto:info@nexusdevstudio.com">info@nexusdevstudio.com</a>
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer class="legal-footer-mini" role="contentinfo">
+      <div class="container legal-footer-inner">
+        <span>© <span id="year"></span> Nexus Dev Studio</span>
+        <span class="legal-footer-sep" aria-hidden="true">|</span>
+        <a href="privacy.html">Privacy Policy</a>
+        <span class="legal-footer-sep" aria-hidden="true">|</span>
+        <a href="terms.html">Terms of Service</a>
+        <span class="legal-footer-sep" aria-hidden="true">|</span>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </footer>
+
+    <div
+      class="cookie-consent"
+      id="cookie-consent"
+      role="dialog"
+      aria-describedby="cookie-text-main"
+      data-aria-key="cookie_aria_banner"
+      aria-hidden="true"
+      hidden
+    >
+      <div class="cookie-consent-inner">
+        <p class="cookie-consent-text" id="cookie-text-main">
+          <span data-key="cookie_banner_text"
+            >We use cookies to improve your experience, analyze traffic, and enhance performance.</span
+          >
+        </p>
+        <div class="cookie-consent-actions">
+          <button type="button" class="cookie-btn cookie-btn--secondary" id="cookie-reject" data-key="cookie_reject">
+            Reject Non-Essential
+          </button>
+          <button type="button" class="cookie-btn cookie-btn--ghost" id="cookie-manage" data-key="cookie_manage">
+            Manage Preferences
+          </button>
+          <button type="button" class="cookie-btn cookie-btn--primary" id="cookie-accept" data-key="cookie_accept">
+            Accept All
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="cookie-modal"
+      id="cookie-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="cookie-modal-title"
+      data-aria-key="cookie_aria_modal"
+      aria-hidden="true"
+      hidden
+    >
+      <button type="button" class="cookie-modal-backdrop" id="cookie-modal-backdrop" data-aria-key="cookie_close_aria"></button>
+      <div class="cookie-modal-panel card" role="document">
+        <h2 class="cookie-modal-title" id="cookie-modal-title" data-key="cookie_modal_title">Cookie preferences</h2>
+        <p class="cookie-modal-intro" data-key="cookie_modal_intro">
+          Choose which optional cookie categories you allow. Necessary cookies are always active.
+        </p>
+        <ul class="cookie-categories">
+          <li class="cookie-cat">
+            <div class="cookie-cat-head">
+              <span class="cookie-cat-name" data-key="cookie_cat_necessary">Necessary</span>
+              <span class="cookie-cat-badge" data-key="cookie_always_on">Always on</span>
+            </div>
+            <p class="cookie-cat-desc" data-key="cookie_cat_necessary_desc">
+              Required for the site to function and cannot be disabled.
+            </p>
+          </li>
+          <li class="cookie-cat">
+            <label class="cookie-toggle" for="cookie-analytics">
+              <input type="checkbox" class="cookie-native" id="cookie-analytics" />
+              <span class="cookie-toggle-row">
+                <span class="cookie-cat-name" data-key="cookie_cat_analytics">Analytics</span>
+                <span class="cookie-switch" aria-hidden="true"><span class="cookie-switch-knob"></span></span>
+              </span>
+            </label>
+            <p class="cookie-cat-desc" data-key="cookie_cat_analytics_desc">
+              Help us understand how visitors use the site.
+            </p>
+          </li>
+          <li class="cookie-cat">
+            <label class="cookie-toggle" for="cookie-marketing">
+              <input type="checkbox" class="cookie-native" id="cookie-marketing" />
+              <span class="cookie-toggle-row">
+                <span class="cookie-cat-name" data-key="cookie_cat_marketing">Marketing</span>
+                <span class="cookie-switch" aria-hidden="true"><span class="cookie-switch-knob"></span></span>
+              </span>
+            </label>
+            <p class="cookie-cat-desc" data-key="cookie_cat_marketing_desc">
+              Used for relevant messaging and measuring campaigns where applicable.
+            </p>
+          </li>
+        </ul>
+        <div class="cookie-modal-footer">
+          <button type="button" class="cookie-btn cookie-btn--ghost" id="cookie-modal-cancel" data-key="cookie_close">
+            Close
+          </button>
+          <button type="button" class="cookie-btn cookie-btn--primary" id="cookie-save" data-key="cookie_save">
+            Save preferences
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
