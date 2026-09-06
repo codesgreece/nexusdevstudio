@@ -190,6 +190,51 @@
       audience_title: "Who We Work With",
       audience_lead:
         "Targeted solutions for teams that want clarity, speed, and measurable growth online.",
+      founder_label: "Founder",
+      founder_name: "Charalampos Christopoulos",
+      founder_role: "Founder & Web Developer | Nexus Dev Studio",
+      founder_sign_role: "Founder — Nexus Dev Studio",
+      founder_intro_1:
+        "For me, building a website is not just a job. It is the process through which an idea, a business, or a personal vision gains its own digital presence.",
+      founder_intro_2:
+        "Nexus Dev Studio was created with a clear goal: to help professionals and businesses get a modern, beautiful, and truly functional online presence — without technology feeling complicated or out of reach.",
+      founder_vision_title: "My vision",
+      founder_vision_1:
+        "I believe every business is different, and that is why I do not like creating “just another website.”",
+      founder_vision_2:
+        "Before I start a project, I want to understand who the person behind the business is, what they offer, who they serve, and what they truly want to achieve.",
+      founder_vision_3: "That is where creation begins.",
+      founder_vision_4:
+        "I design every project to represent that specific professional — not to look like a ready-made template used by hundreds of other businesses.",
+      founder_clients_title: "Every client matters",
+      founder_clients_1:
+        "One of the things I value most in my work is the personal relationship with the client.",
+      founder_clients_2:
+        "I do not see a project as just delivering files and an invoice. I want the person working with me to feel that someone truly cared about their business.",
+      founder_clients_3:
+        "That is why I pay attention to the details, listen to each client’s needs, and look for solutions that create real value in their day-to-day work.",
+      founder_clients_4: "Because often a small detail is what makes a website stand out.",
+      founder_love_title: "I love what I create",
+      founder_love_1:
+        "What fascinates me most is starting from a simple idea and watching it turn into something real.",
+      founder_love_2:
+        "From design and aesthetics to functionality and the visitor’s experience, every stage is part of the creative process.",
+      founder_love_3:
+        "I like learning, testing new technologies, and evolving constantly, because the digital world never stands still.",
+      founder_love_4:
+        "And that is exactly what I want to do for every business that works with me: help it evolve and present its best self online.",
+      founder_more_title: "More than a website",
+      founder_more_1:
+        "At Nexus Dev Studio, my goal is not simply to create beautiful pages.",
+      founder_more_2: "I want to create digital experiences that have purpose.",
+      founder_more_3:
+        "A website should capture attention, build trust, communicate the value of a business clearly, and ultimately help the professional reach their goals.",
+      founder_more_4: "That is my vision.",
+      founder_manifesto_1: "To take an idea and give it digital form.",
+      founder_manifesto_2: "To turn a business into a presence worth remembering.",
+      founder_manifesto_3: "And to create every project as if it were my own.",
+      founder_cta: "Start a conversation",
+      founder_cta_work: "See the work",
       audience_1_title: "Small Businesses",
       audience_1_desc: "Perfect for businesses that want to build a strong online presence",
       audience_2_title: "Restaurants & Cafés",
@@ -666,6 +711,51 @@
       audience_title: "Με ποιους δουλεύουμε",
       audience_lead:
         "Στοχευμένες λύσεις για ομάδες που θέλουν σαφήνεια, ταχύτητα και μετρήσιμη ανάπτυξη online.",
+      founder_label: "Ιδρυτής",
+      founder_name: "Χαράλαμπος Χριστόπουλος",
+      founder_role: "Founder & Web Developer | Nexus Dev Studio",
+      founder_sign_role: "Founder — Nexus Dev Studio",
+      founder_intro_1:
+        "Για μένα, η δημιουργία μιας ιστοσελίδας δεν είναι απλώς μια δουλειά. Είναι η διαδικασία μέσα από την οποία μια ιδέα, μια επιχείρηση ή ένα προσωπικό όραμα αποκτά τη δική του ψηφιακή παρουσία.",
+      founder_intro_2:
+        "Το Nexus Dev Studio δημιουργήθηκε με έναν ξεκάθαρο στόχο: να βοηθήσω επαγγελματίες και επιχειρήσεις να αποκτήσουν μια σύγχρονη, όμορφη και πραγματικά λειτουργική παρουσία στο διαδίκτυο, χωρίς η τεχνολογία να γίνεται περίπλοκη ή απρόσιτη.",
+      founder_vision_title: "Το όραμά μου",
+      founder_vision_1:
+        "Πιστεύω ότι κάθε επιχείρηση είναι διαφορετική και γι' αυτό δεν μου αρέσει να δημιουργώ απλώς «άλλο ένα website».",
+      founder_vision_2:
+        "Πριν ξεκινήσω ένα project, θέλω να καταλάβω ποιος είναι ο άνθρωπος πίσω από την επιχείρηση, τι προσφέρει, σε ποιον απευθύνεται και τι θέλει πραγματικά να πετύχει.",
+      founder_vision_3: "Από εκεί ξεκινάει η δημιουργία.",
+      founder_vision_4:
+        "Σχεδιάζω κάθε project με σκοπό να αντιπροσωπεύει τον συγκεκριμένο επαγγελματία και όχι να μοιάζει με ένα έτοιμο template που χρησιμοποιούν εκατοντάδες άλλες επιχειρήσεις.",
+      founder_clients_title: "Κάθε πελάτης έχει σημασία",
+      founder_clients_1:
+        "Ένα από τα πράγματα που θεωρώ πιο σημαντικά στη δουλειά μου είναι η προσωπική σχέση με τον πελάτη.",
+      founder_clients_2:
+        "Δεν βλέπω ένα project απλώς ως μια παράδοση αρχείων και έναν λογαριασμό. Θέλω ο άνθρωπος που συνεργάζεται μαζί μου να αισθάνεται ότι κάποιος πραγματικά ασχολήθηκε με την επιχείρησή του.",
+      founder_clients_3:
+        "Γι' αυτό δίνω σημασία στις λεπτομέρειες, ακούω τις ανάγκες του κάθε πελάτη και προσπαθώ να βρίσκω λύσεις που έχουν πραγματική αξία για την καθημερινότητά του.",
+      founder_clients_4: "Γιατί πολλές φορές μια μικρή λεπτομέρεια είναι αυτή που κάνει μια ιστοσελίδα να ξεχωρίζει.",
+      founder_love_title: "Αγαπάω αυτό που δημιουργώ",
+      founder_love_1:
+        "Αυτό που με συναρπάζει περισσότερο είναι να ξεκινάω από μια απλή ιδέα και να τη βλέπω να μετατρέπεται σε κάτι πραγματικό.",
+      founder_love_2:
+        "Από τον σχεδιασμό και την αισθητική μέχρι τη λειτουργικότητα και την εμπειρία του επισκέπτη, κάθε στάδιο είναι ένα κομμάτι της δημιουργικής διαδικασίας.",
+      founder_love_3:
+        "Μου αρέσει να μαθαίνω, να δοκιμάζω νέες τεχνολογίες και να εξελίσσομαι συνεχώς, γιατί ο ψηφιακός κόσμος δεν μένει ποτέ στάσιμος.",
+      founder_love_4:
+        "Και αυτό ακριβώς θέλω να κάνω και για κάθε επιχείρηση που συνεργάζεται μαζί μου: να τη βοηθήσω να εξελιχθεί και να παρουσιάσει τον καλύτερό της εαυτό online.",
+      founder_more_title: "Περισσότερο από μια ιστοσελίδα",
+      founder_more_1:
+        "Στο Nexus Dev Studio δεν έχω ως στόχο απλώς να δημιουργώ όμορφες σελίδες.",
+      founder_more_2: "Θέλω να δημιουργώ ψηφιακές εμπειρίες που έχουν σκοπό.",
+      founder_more_3:
+        "Μια ιστοσελίδα πρέπει να μπορεί να τραβήξει την προσοχή, να δημιουργήσει εμπιστοσύνη, να επικοινωνήσει σωστά την αξία μιας επιχείρησης και τελικά να βοηθήσει τον επαγγελματία να πετύχει τους στόχους του.",
+      founder_more_4: "Αυτό είναι το δικό μου όραμα.",
+      founder_manifesto_1: "Να παίρνω μια ιδέα και να της δίνω ψηφιακή μορφή.",
+      founder_manifesto_2: "Να μετατρέπω μια επιχείρηση σε μια παρουσία που αξίζει να θυμάσαι.",
+      founder_manifesto_3: "Και να δημιουργώ κάθε project σαν να ήταν δικό μου.",
+      founder_cta: "Ας μιλήσουμε",
+      founder_cta_work: "Δείτε τη δουλειά",
       audience_1_title: "Μικρές επιχειρήσεις",
       audience_1_desc: "Ιδανικό για επιχειρήσεις που θέλουν ισχυρή online παρουσία",
       audience_2_title: "Εστιατόρια & καφέ",
