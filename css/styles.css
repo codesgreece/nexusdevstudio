@@ -2737,9 +2737,20 @@ section {
   padding-bottom: 0.5rem;
 }
 
+/* Laptop + phone as one centered unit (phone overhang included in width) */
+.device-showcase__cluster {
+  --phone-w: clamp(108px, 16vw, 168px);
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  padding-right: calc(var(--phone-w) * 0.55);
+  box-sizing: content-box;
+}
+
 .device-laptop {
   position: relative;
-  width: min(100%, 560px);
+  width: min(72vw, 560px);
+  max-width: calc(100vw - 3rem - var(--phone-w) * 0.55);
   z-index: 1;
 }
 
@@ -2820,9 +2831,9 @@ section {
 
 .device-phone {
   position: absolute;
-  right: clamp(-4%, -2vw, 2%);
+  right: 0;
   bottom: clamp(4%, 3vw, 12%);
-  width: clamp(108px, 16vw, 168px);
+  width: var(--phone-w);
   z-index: 2;
   filter: drop-shadow(0 16px 28px rgba(0, 0, 0, 0.5));
 }
@@ -2912,9 +2923,13 @@ section {
 }
 
 @media (max-width: 600px) {
+  .device-showcase__cluster {
+    --phone-w: clamp(92px, 22vw, 130px);
+    padding-right: calc(var(--phone-w) * 0.5);
+  }
+
   .device-phone {
-    width: clamp(92px, 22vw, 130px);
-    right: -2%;
+    right: 0;
     bottom: 8%;
   }
 
