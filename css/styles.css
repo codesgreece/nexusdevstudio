@@ -4036,13 +4036,16 @@ a.portfolio-card:hover .portfolio-card-cta-icon {
   display: grid;
   gap: clamp(1.5rem, 3vw, 2rem);
   align-items: start;
+  grid-template-columns: minmax(0, 1fr);
 }
 
-@media (min-width: 1024px) {
-  .builder-configurator-grid {
-    grid-template-columns: minmax(0, 1fr) minmax(280px, 340px);
-    gap: clamp(1.75rem, 3vw, 2.25rem);
-  }
+.builder-launch-row {
+  margin-top: 0.35rem;
+}
+
+.builder-launch-row .builder-send-btn {
+  width: 100%;
+  max-width: 22rem;
 }
 
 .builder-configurator-main {
