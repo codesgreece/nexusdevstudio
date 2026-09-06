@@ -2973,7 +2973,7 @@
     renderPreview();
   })();
 
-  /* ---------- Portfolio device mockups (3D tilt) ---------- */
+  /* ---------- Portfolio device mockups (scaled iframes + 3D tilt) ---------- */
   (function initDeviceShowcase() {
     var link = document.querySelector(".device-showcase__link");
     if (!link) return;
@@ -2984,6 +2984,38 @@
         iframe.setAttribute("src", url);
       });
     }
+
+    function fitWrap(wrap) {
+      var fitW = parseFloat(wrap.getAttribute("data-fit-width")) || 1440;
+      var fitH = parseFloat(wrap.getAttribute("data-fit-height")) || 900;
+      var rect = wrap.getBoundingClientRect();
+      if (!rect.width || !rect.height) return;
+      /* Scale by width so the site renders at a real desktop/mobile viewport */
+      var scale = rect.width / fitW;
+      wrap.style.setProperty("--fit-w", fitW + "px");
+      wrap.style.setProperty("--fit-h", fitH + "px");
+      wrap.style.setProperty("--fit-scale", String(scale));
+    }
+
+    function fitAll() {
+      link.querySelectorAll("[data-iframe-fit]").forEach(fitWrap);
+    }
+
+    fitAll();
+    window.addEventListener("resize", fitAll, { passive: true });
+
+    if (typeof ResizeObserver !== "undefined") {
+      var ro = new ResizeObserver(fitAll);
+      link.querySelectorAll("[data-iframe-fit]").forEach(function (wrap) {
+        ro.observe(wrap);
+      });
+    }
+
+    /* Re-fit after iframe paint (layout can settle late) */
+    link.querySelectorAll(".device-iframe").forEach(function (iframe) {
+      iframe.addEventListener("load", fitAll, { once: true });
+    });
+    requestAnimationFrame(fitAll);
 
     var tilt = link.querySelector("[data-device-tilt]");
     if (!tilt) return;
