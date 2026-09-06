@@ -4188,10 +4188,10 @@ a.portfolio-card:hover .portfolio-card-cta-icon {
 .builder-tile.builder-chip .builder-tile-desc {
   display: block !important;
   margin: 0;
-  font-size: 0.8rem;
-  font-weight: 500;
-  line-height: 1.3;
-  color: rgba(228, 228, 231, 0.88);
+  font-size: 0.84rem;
+  font-weight: 550;
+  line-height: 1.35;
+  color: rgba(244, 244, 245, 0.92);
   -webkit-line-clamp: unset;
   overflow: visible;
 }
