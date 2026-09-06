@@ -23,10 +23,10 @@
 
   /* Unified card system (Services, Audience, Benefits, Urgency, Promise, FAQ) */
   --card-radius: calc(var(--radius) + 2px);
-  --card-pad-y: 2.1rem;
-  --card-pad-x: 1.95rem;
-  --card-pad-tight-y: 1.75rem;
-  --card-pad-tight-x: 1.65rem;
+  --card-pad-y: 1.45rem;
+  --card-pad-x: 1.45rem;
+  --card-pad-tight-y: 1.2rem;
+  --card-pad-tight-x: 1.2rem;
   --card-border-idle: rgba(255, 255, 255, 0.07);
   --card-border-hover: rgba(196, 181, 254, 0.42);
   --card-bg: rgba(18, 18, 26, 0.78);
@@ -1046,7 +1046,7 @@ body.is-lang-switching [data-key] {
 .hero-brand {
   display: flex;
   justify-content: center;
-  margin-bottom: clamp(1.75rem, 5vw, 2.75rem);
+  margin-bottom: clamp(1rem, 3vw, 1.5rem);
 }
 
 @media (max-width: 520px) {
@@ -1195,13 +1195,13 @@ body.is-lang-switching [data-key] {
 .hero {
   position: relative;
   isolation: isolate;
-  min-height: 100vh;
-  min-height: 100dvh;
+  min-height: min(85vh, 720px);
+  min-height: min(85dvh, 720px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: calc(var(--header-h) + 2rem);
-  padding-bottom: clamp(5.5rem, 12vh, 8.5rem);
+  padding-top: calc(var(--header-h) + 1.25rem);
+  padding-bottom: clamp(3rem, 7vh, 4.5rem);
   overflow: hidden;
   /* Dark base → barely purple mid-tone → deep edge (depth, not brightness) */
   background: linear-gradient(
@@ -1352,7 +1352,7 @@ body.is-lang-switching [data-key] {
 .hero-title-line {
   display: block;
   margin: 0;
-  font-size: clamp(1.85rem, 5vw, 3rem);
+  font-size: clamp(1.55rem, 4vw, 2.45rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.12;
@@ -1530,8 +1530,7 @@ body.is-lang-switching [data-key] {
   text-align: center;
   max-width: 880px;
   margin-inline: auto;
-  /* Keeps trust row clear of the absolute scroll cue at the bottom */
-  padding-bottom: clamp(3.25rem, 9vh, 5.5rem);
+  padding-bottom: clamp(1.75rem, 5vh, 3rem);
 }
 
 .hero-eyebrow {
@@ -1596,7 +1595,7 @@ body.is-lang-switching [data-key] {
 
 /* Single-line hero title fallback (non-cinematic pages, if any) */
 .hero:not(.hero--cinematic) .hero-title {
-  font-size: clamp(1.85rem, 5vw, 3rem);
+  font-size: clamp(1.55rem, 4vw, 2.45rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   background: linear-gradient(135deg, #ffffff 0%, #e4e4e7 40%, #a78bfa 100%);
@@ -1607,22 +1606,23 @@ body.is-lang-switching [data-key] {
 }
 
 .hero-desc {
-  margin: 0 auto 2rem;
+  margin: 0 auto 1.25rem;
   max-width: 520px;
   color: var(--text-muted);
-  font-size: 1.05rem;
+  font-size: 0.98rem;
+  line-height: 1.55;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.75rem;
   justify-content: center;
 }
 
 .hero-trust {
-  margin-top: 2.25rem;
-  padding-top: 1.75rem;
+  margin-top: 1.35rem;
+  padding-top: 1.1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   width: 100%;
 }
@@ -1632,7 +1632,7 @@ body.is-lang-switching [data-key] {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: clamp(1.25rem, 4vw, 2.75rem);
+  gap: clamp(0.85rem, 3vw, 1.75rem);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1987,18 +1987,18 @@ body.is-lang-switching [data-key] {
 
 /* Anchor offset for fixed header — smooth scroll targets stay clear of navbar */
 section {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 80px;
 }
 
 /* Sections */
 .section {
-  padding: clamp(4rem, 10vw, 6.5rem) 0;
+  padding: clamp(2.25rem, 5.5vw, 3.5rem) 0;
 }
 
 .section-head {
   text-align: center;
   max-width: 560px;
-  margin: 0 auto 3rem;
+  margin: 0 auto 1.65rem;
 }
 
 .section-label {
@@ -2008,12 +2008,12 @@ section {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent-bright);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.45rem;
 }
 
 .section-title {
-  margin: 0 0 1rem;
-  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  margin: 0 0 0.55rem;
+  font-size: clamp(1.45rem, 3.4vw, 1.95rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   color: var(--text);
@@ -2022,7 +2022,8 @@ section {
 .section-lead {
   margin: 0;
   color: var(--text-muted);
-  font-size: 1.05rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
 /* Audience — who we work with */
@@ -2031,13 +2032,13 @@ section {
 }
 
 .audience .section-head {
-  margin-bottom: clamp(2.25rem, 5vw, 3rem);
+  margin-bottom: clamp(1.15rem, 2.5vw, 1.65rem);
 }
 
 .audience-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
-  gap: clamp(1.25rem, 2.5vw, 1.75rem);
+  gap: clamp(0.85rem, 1.8vw, 1.15rem);
   max-width: min(1120px, 100%);
   margin-inline: auto;
   align-items: stretch;
@@ -2056,13 +2057,13 @@ section {
 }
 
 .benefits .section-head {
-  margin-bottom: clamp(2.25rem, 5vw, 3rem);
+  margin-bottom: clamp(1.15rem, 2.5vw, 1.65rem);
 }
 
 .benefits-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: clamp(1.25rem, 2.5vw, 1.75rem);
+  gap: clamp(0.85rem, 1.8vw, 1.15rem);
   max-width: min(1120px, 100%);
   margin-inline: auto;
   align-items: stretch;
@@ -2113,13 +2114,13 @@ section {
 }
 
 .urgency .section-head {
-  margin-bottom: clamp(2.25rem, 5vw, 3rem);
+  margin-bottom: clamp(1.15rem, 2.5vw, 1.65rem);
 }
 
 .urgency-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: clamp(1.25rem, 2.5vw, 1.75rem);
+  gap: clamp(0.85rem, 1.8vw, 1.15rem);
   max-width: min(1120px, 100%);
   margin-inline: auto;
   align-items: stretch;
@@ -2160,13 +2161,13 @@ section {
 }
 
 .promise .section-head {
-  margin-bottom: clamp(2.25rem, 5vw, 3rem);
+  margin-bottom: clamp(1.15rem, 2.5vw, 1.65rem);
 }
 
 .promise-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: clamp(1.25rem, 2.5vw, 1.75rem);
+  gap: clamp(0.85rem, 1.8vw, 1.15rem);
   max-width: min(1120px, 100%);
   margin-inline: auto;
   align-items: stretch;
@@ -2200,7 +2201,7 @@ section {
 .services-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: 0.9rem;
   align-items: stretch;
   /* Slightly longer stagger step than default .reveal (used by service cards) */
   --reveal-stagger-step: 0.1s;
@@ -2213,14 +2214,14 @@ section {
 @media (min-width: 640px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.65rem;
+    gap: 1rem;
   }
 }
 
 @media (min-width: 1024px) {
   .services-grid {
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 1.15rem;
   }
 }
 
@@ -2438,7 +2439,7 @@ section {
 
 .why .section-head {
   max-width: 640px;
-  margin-bottom: clamp(2.5rem, 5vw, 3.25rem);
+  margin-bottom: clamp(1.25rem, 2.5vw, 1.75rem);
 }
 
 .why .section-title {
@@ -2457,7 +2458,7 @@ section {
 
 .why-stats {
   list-style: none;
-  margin: 1.25rem auto 0;
+  margin: 0.75rem auto 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -2553,21 +2554,21 @@ section {
   height: 100%;
   min-height: 0;
   border-color: rgba(255, 255, 255, 0.07);
-  padding: 2.1rem 1.95rem 2.15rem;
+  padding: 1.45rem 1.35rem 1.5rem;
   border-radius: calc(var(--radius) + 2px);
-  min-height: 15.5rem;
+  min-height: 12.5rem;
 }
 
 @media (min-width: 640px) {
   .why-card {
-    min-height: 17rem;
+    min-height: 13.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .why-card {
-    min-height: 17.75rem;
-    padding: 2.2rem 2rem 2.2rem;
+    min-height: 14rem;
+    padding: 1.45rem 1.35rem 1.5rem;
   }
 }
 
@@ -2576,7 +2577,7 @@ section {
   --pf-ease: cubic-bezier(0.22, 1, 0.36, 1);
   --pf-dur: 0.55s;
   --pf-dur-slow: 0.85s;
-  padding-bottom: clamp(4.5rem, 11vw, 7rem);
+  padding-bottom: clamp(2.5rem, 6vw, 3.75rem);
 }
 
 .portfolio__intro {
@@ -2585,12 +2586,12 @@ section {
 }
 
 .portfolio-head {
-  margin-bottom: clamp(2rem, 4vw, 2.75rem);
+  margin-bottom: clamp(1.1rem, 2.5vw, 1.65rem);
 }
 
 .portfolio-head-title {
-  margin-bottom: 0.65rem;
-  font-size: clamp(2.1rem, 5vw, 3rem);
+  margin-bottom: 0.4rem;
+  font-size: clamp(1.65rem, 4vw, 2.35rem);
   letter-spacing: -0.04em;
   background: linear-gradient(135deg, #fafafa 0%, #c4b5fd 55%, #8b5cf6 100%);
   -webkit-background-clip: text;
@@ -2600,9 +2601,9 @@ section {
 }
 
 .portfolio-head-accent {
-  width: min(120px, 40%);
-  height: 3px;
-  margin: 0 auto 1.35rem;
+  width: min(100px, 36%);
+  height: 2px;
+  margin: 0 auto 0.85rem;
   border-radius: 999px;
   background: linear-gradient(90deg, transparent, var(--accent-bright), rgba(139, 92, 246, 0.4), transparent);
   box-shadow: 0 0 28px rgba(139, 92, 246, 0.55), 0 0 48px rgba(124, 58, 237, 0.2);
@@ -2611,14 +2612,14 @@ section {
 .portfolio-head-lead {
   max-width: 38rem;
   margin-inline: auto;
-  font-size: 1.08rem;
-  line-height: 1.65;
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
 /* —— Portfolio: live device mockups (laptop + phone) —— */
 .portfolio-mockups {
-  margin-top: clamp(2rem, 5vw, 3rem);
-  margin-bottom: clamp(2.25rem, 5vw, 3.5rem);
+  margin-top: clamp(1.1rem, 3vw, 1.75rem);
+  margin-bottom: clamp(1.25rem, 3vw, 2rem);
 }
 
 .device-showcase {
@@ -2629,7 +2630,7 @@ section {
 
 .device-showcase__header {
   text-align: center;
-  margin-bottom: clamp(1.5rem, 4vw, 2.25rem);
+  margin-bottom: clamp(0.85rem, 2.5vw, 1.35rem);
 }
 
 .device-showcase__label {
@@ -2733,13 +2734,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  min-height: clamp(220px, 38vw, 340px);
-  padding-bottom: 0.5rem;
+  min-height: clamp(180px, 30vw, 280px);
+  padding-bottom: 0.35rem;
 }
 
 /* Laptop + phone as one centered unit (phone overhang included in width) */
 .device-showcase__cluster {
-  --phone-w: clamp(108px, 16vw, 168px);
+  --phone-w: clamp(96px, 14vw, 148px);
   position: relative;
   width: fit-content;
   max-width: 100%;
@@ -2749,7 +2750,7 @@ section {
 
 .device-laptop {
   position: relative;
-  width: min(72vw, 560px);
+  width: min(64vw, 480px);
   max-width: calc(100vw - 3rem - var(--phone-w) * 0.55);
   z-index: 1;
 }
@@ -3023,7 +3024,7 @@ a.portfolio-card {
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
-  width: clamp(240px, 70vw, 320px);
+  width: clamp(210px, 62vw, 280px);
   min-height: 0;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -3047,13 +3048,13 @@ a.portfolio-card {
 
 @media (min-width: 768px) {
   a.portfolio-card {
-    width: clamp(260px, 24vw, 360px);
+    width: clamp(230px, 20vw, 300px);
   }
 }
 
 @media (min-width: 1200px) {
   a.portfolio-card {
-    width: clamp(280px, 21vw, 380px);
+    width: clamp(250px, 18vw, 320px);
   }
 }
 
@@ -3086,7 +3087,7 @@ a.portfolio-card:active {
   position: relative;
   flex-shrink: 0;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 10;
   overflow: hidden;
   background: var(--bg);
 }
@@ -3141,9 +3142,9 @@ a.portfolio-card:hover .portfolio-overlay {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 0.4rem;
-  padding: 1.2rem 1.25rem 1.35rem;
-  min-height: 9.25rem;
+  gap: 0.3rem;
+  padding: 0.85rem 1rem 1rem;
+  min-height: 7.25rem;
 }
 
 .portfolio-tag {
@@ -3240,14 +3241,14 @@ a.portfolio-card:hover .portfolio-card-cta-icon {
 
 .about-inner {
   display: grid;
-  gap: clamp(2.5rem, 6vw, 4rem);
+  gap: clamp(1.35rem, 3.5vw, 2.25rem);
   align-items: center;
 }
 
 @media (min-width: 900px) {
   .about-inner {
     grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-    gap: clamp(3rem, 5vw, 5rem);
+    gap: clamp(1.75rem, 3.5vw, 2.75rem);
     align-items: start;
   }
 }
@@ -3761,7 +3762,7 @@ a.portfolio-card:hover .portfolio-card-cta-icon {
 }
 
 .faq .section-head {
-  margin-bottom: clamp(2rem, 4vw, 2.75rem);
+  margin-bottom: clamp(1.1rem, 2.5vw, 1.55rem);
 }
 
 .faq-accordion {
@@ -3769,7 +3770,7 @@ a.portfolio-card:hover .portfolio-card-cta-icon {
   margin-inline: auto;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.5rem;
   --reveal-stagger-step: 0.06s;
 }
 
@@ -4052,7 +4053,7 @@ a.portfolio-card:hover .portfolio-card-cta-icon {
 .builder-configurator-main {
   display: flex;
   flex-direction: column;
-  gap: clamp(1.25rem, 2.5vw, 1.75rem);
+  gap: clamp(0.85rem, 1.8vw, 1.15rem);
 }
 
 .builder-card--section {
@@ -7445,13 +7446,13 @@ a.contact-detail-value:hover {
 }
 
 .contact-form-panel {
-  padding: clamp(1.65rem, 3.5vw, 2.15rem) clamp(1.5rem, 3vw, 2rem);
+  padding: clamp(1.15rem, 2.5vw, 1.55rem) clamp(1.1rem, 2.5vw, 1.45rem);
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1.15rem;
+  gap: 0.85rem;
 }
 
 .contact-form-status {
@@ -7600,7 +7601,7 @@ a.contact-detail-value:hover {
 /* CTA panel — glow border, gradient, float (fade-in on scroll via .cta-inner.reveal) */
 .cta-panel {
   position: relative;
-  padding: clamp(3rem, 8vw, 4.5rem);
+  padding: clamp(1.65rem, 4vw, 2.5rem);
   border-radius: calc(var(--radius) + 2px);
   border: 1px solid rgba(196, 181, 254, 0.14);
   background: linear-gradient(
