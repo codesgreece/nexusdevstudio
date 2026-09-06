@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=builder-chips4" />
+    <link rel="stylesheet" href="css/styles.css?v=builder-tabs6" />
   </head>
   <body>
     <svg
@@ -1155,7 +1155,7 @@
         </div>
       </section>
 
-      <section class="section builder reveal--sweep" id="project-builder" aria-labelledby="builder-heading">
+      <section class="section builder reveal--sweep" id="project-builder">
         <div class="builder-atmosphere" aria-hidden="true">
           <div class="builder-orb builder-orb--a"></div>
           <div class="builder-orb builder-orb--b"></div>
@@ -1165,13 +1165,7 @@
         <div class="container builder-wrap">
           <div id="nds-builder-fx-root" class="nds-builder-fx-root" aria-hidden="true"></div>
           <div class="builder-ai-hud" id="builder-ai-hud" hidden aria-live="polite"></div>
-          <header class="section-head builder-head reveal" data-reveal>
-            <span class="section-label" data-key="builder_label">Configurator</span>
-            <h2 class="section-title" id="builder-heading" data-key="builder_title">Build Your Project</h2>
-            <p class="section-lead" data-key="builder_lead">
-              Customize your solution in real-time.
-            </p>
-          </header>
+          <h2 class="sr-only" id="builder-heading" data-key="builder_title">Build Your Project</h2>
 
           <div class="builder-launch-progress glass-panel" id="builder-launch-progress" aria-live="polite">
             <div class="builder-launch-progress-head">
@@ -1285,31 +1279,31 @@
                   <div class="builder-pack__chips" data-magnetic-group="builder-projects">
                     <button type="button" class="builder-tile builder-chip magnetic" data-project="landing">
                       <span class="builder-tile-title" data-key="builder_pt_landing_t">Landing Page</span>
-                      <span class="builder-tile-price" data-key="builder_pt_landing_p">€175</span>
+                      <span class="builder-tile-desc" data-key="builder_pt_landing_s">One-page site</span>
                     </button>
                     <button type="button" class="builder-tile builder-chip magnetic" data-project="business">
                       <span class="builder-tile-title" data-key="builder_pt_biz_t">Business Website</span>
-                      <span class="builder-tile-price" data-key="builder_pt_biz_p">€275</span>
+                      <span class="builder-tile-desc" data-key="builder_pt_biz_s">Full website</span>
                     </button>
                     <button type="button" class="builder-tile builder-chip magnetic" data-project="ecommerce">
                       <span class="builder-tile-title" data-key="builder_pt_ecom_t">E-commerce</span>
-                      <span class="builder-tile-price" data-key="builder_pt_ecom_p">€750</span>
+                      <span class="builder-tile-desc" data-key="builder_pt_ecom_s">Online store</span>
                     </button>
                     <button type="button" class="builder-tile builder-chip magnetic" data-project="booking">
                       <span class="builder-tile-title" data-key="builder_pt_book_t">Booking Platform</span>
-                      <span class="builder-tile-price" data-key="builder_pt_book_p">€550</span>
+                      <span class="builder-tile-desc" data-key="builder_pt_book_s">Appointments online</span>
                     </button>
                     <button type="button" class="builder-tile builder-chip magnetic" data-project="rent_service">
                       <span class="builder-tile-title" data-key="builder_pt_rent_t">Rent a service</span>
-                      <span class="builder-tile-price" data-key="builder_pt_rent_p">€50</span>
+                      <span class="builder-tile-desc" data-key="builder_pt_rent_s">Service rental</span>
                     </button>
                     <button type="button" class="builder-tile builder-chip magnetic" data-project="web_mobile">
                       <span class="builder-tile-title" data-key="builder_pt_webmob_t">Web &amp; Mobile App</span>
-                      <span class="builder-tile-price" data-key="builder_pt_webmob_p">€1,550</span>
+                      <span class="builder-tile-desc" data-key="builder_pt_webmob_s">Web + app</span>
                     </button>
                     <button type="button" class="builder-tile builder-chip magnetic" data-project="mobile_native">
                       <span class="builder-tile-title" data-key="builder_pt_mobile_native_t">Mobile app</span>
-                      <span class="builder-tile-price" data-key="builder_pt_mobile_native_p">€455</span>
+                      <span class="builder-tile-desc" data-key="builder_pt_mobile_native_s">iOS &amp; Android</span>
                     </button>
                   </div>
                 </div>
@@ -1319,31 +1313,31 @@
                   <div class="builder-pack__chips" data-magnetic-group="builder-addons">
                     <button type="button" class="builder-tile builder-chip builder-tile--toggle magnetic" data-feature="booking_sys">
                       <span class="builder-tile-title" data-key="builder_ft_book_t">Booking System</span>
-                      <span class="builder-tile-addon" data-key="builder_ft_book_p">+€150</span>
+                      <span class="builder-tile-desc" data-key="builder_ft_book_s">Calendar bookings</span>
                     </button>
                     <button type="button" class="builder-tile builder-chip builder-tile--toggle magnetic" data-feature="admin">
                       <span class="builder-tile-title" data-key="builder_ft_ad_t">Admin Dashboard</span>
-                      <span class="builder-tile-addon" data-key="builder_ft_ad_p">+€200</span>
+                      <span class="builder-tile-desc" data-key="builder_ft_ad_s">Manage panel</span>
                     </button>
                     <button type="button" class="builder-tile builder-chip builder-tile--toggle magnetic" data-feature="seo">
                       <span class="builder-tile-title" data-key="builder_ft_seo_t">SEO Optimization</span>
-                      <span class="builder-tile-addon" data-key="builder_ft_seo_p">+€100</span>
+                      <span class="builder-tile-desc" data-key="builder_ft_seo_s">Search visibility</span>
                     </button>
                     <button type="button" class="builder-tile builder-chip builder-tile--toggle magnetic" data-feature="i18n">
                       <span class="builder-tile-title" data-key="builder_ft_i18n_t">Multi-language</span>
-                      <span class="builder-tile-addon" data-key="builder_ft_i18n_p">+€120</span>
+                      <span class="builder-tile-desc" data-key="builder_ft_i18n_s">More languages</span>
                     </button>
                     <button type="button" class="builder-tile builder-chip builder-tile--toggle magnetic" data-feature="backend">
                       <span class="builder-tile-title" data-key="builder_ft_backend_t">Backend system</span>
-                      <span class="builder-tile-addon" data-key="builder_ft_backend_p">+€75</span>
+                      <span class="builder-tile-desc" data-key="builder_ft_backend_s">Server logic</span>
                     </button>
                     <button type="button" class="builder-tile builder-chip builder-tile--toggle magnetic" data-feature="loyalty">
                       <span class="builder-tile-title" data-key="builder_ft_loyalty_t">Loyalty program</span>
-                      <span class="builder-tile-addon" data-key="builder_ft_loyalty_p">+€55</span>
+                      <span class="builder-tile-desc" data-key="builder_ft_loyalty_s">Rewards system</span>
                     </button>
                     <button type="button" class="builder-tile builder-chip builder-tile--toggle magnetic" data-feature="domain">
                       <span class="builder-tile-title" data-key="builder_ft_domain_t">Custom domain name</span>
-                      <span class="builder-tile-addon" data-key="builder_ft_domain_p">+€25</span>
+                      <span class="builder-tile-desc" data-key="builder_ft_domain_s">Your URL</span>
                     </button>
                   </div>
                 </div>
