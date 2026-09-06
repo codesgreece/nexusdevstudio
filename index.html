@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=builder-strip1" />
+    <link rel="stylesheet" href="css/styles.css?v=builder-strip2" />
   </head>
   <body>
     <svg
@@ -1170,98 +1170,6 @@
           <div class="builder-shell builder-shell--live reveal" data-reveal>
             <div class="builder-configurator-grid">
               <div class="builder-configurator-main">
-                <div class="builder-wizard-card glass-panel" id="builder-wizard-card">
-                  <h3 class="builder-wizard-title" data-key="builder_wizard_title">Build your website</h3>
-                  <p class="builder-wizard-lead" data-key="builder_wizard_lead">
-                    Shape your brand, look, and services.
-                  </p>
-
-                  <div class="builder-wizard-field">
-                    <label class="builder-wizard-label" for="builder-business-name" data-key="builder_business_label_yours"
-                      >Your Business Name</label
-                    >
-                    <input
-                      type="text"
-                      id="builder-business-name"
-                      class="builder-business-input builder-wizard-input"
-                      name="business-name"
-                      autocomplete="organization"
-                      maxlength="48"
-                      spellcheck="false"
-                      data-placeholder-key="builder_business_ph_yours"
-                      placeholder="e.g. Maria Beauty Salon"
-                    />
-                  </div>
-
-                  <div class="builder-wizard-field">
-                    <p class="builder-wizard-label" data-key="builder_step_style">Look &amp; feel</p>
-                    <div class="builder-style-row" role="radiogroup" data-aria-key="builder_style_group_aria">
-                      <button type="button" class="builder-style-btn" data-wizard-style="minimal" aria-pressed="false">
-                        <span data-key="builder_style_minimal">Minimal</span>
-                      </button>
-                      <button type="button" class="builder-style-btn" data-wizard-style="luxury" aria-pressed="false">
-                        <span data-key="builder_style_luxury">Luxury</span>
-                      </button>
-                      <button type="button" class="builder-style-btn" data-wizard-style="bold" aria-pressed="false">
-                        <span data-key="builder_style_bold">Bold</span>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="builder-wizard-field">
-                    <p class="builder-wizard-label" data-key="builder_logo_label">Your logo</p>
-                    <div class="builder-logo-row">
-                      <input type="file" id="builder-logo-input" class="sr-only" accept="image/png,image/jpeg,image/webp,image/svg+xml" tabindex="-1" />
-                      <label for="builder-logo-input" class="builder-logo-upload btn btn-ghost">
-                        <span data-key="builder_logo_btn">Upload image</span>
-                      </label>
-                      <button type="button" class="builder-logo-clear btn btn-ghost" id="builder-logo-clear" hidden>
-                        <span data-key="builder_logo_clear">Remove</span>
-                      </button>
-                      <span class="builder-logo-thumb-wrap" id="builder-logo-thumb-wrap" hidden>
-                        <img class="builder-logo-thumb" id="builder-logo-thumb" alt="" width="40" height="40" />
-                      </span>
-                    </div>
-                    <p class="builder-wizard-hint" data-key="builder_logo_hint">PNG or JPG. Stored in this session only.</p>
-                  </div>
-
-                  <div class="builder-wizard-field">
-                    <p class="builder-wizard-label" data-key="builder_services_label">Services you offer</p>
-                    <div class="builder-service-chips" id="builder-service-chips">
-                      <button type="button" class="builder-service-chip" data-service="haircuts" aria-pressed="false">
-                        <span class="builder-service-chip-ico" aria-hidden="true">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4h3l2 16h2L15 4h3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </span>
-                        <span data-key="builder_svc_haircuts">Haircuts</span>
-                      </button>
-                      <button type="button" class="builder-service-chip" data-service="plumbing" aria-pressed="false">
-                        <span class="builder-service-chip-ico" aria-hidden="true">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 3v4M10 21V7M6 3v4M18 9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>
-                        </span>
-                        <span data-key="builder_svc_plumbing">Plumbing</span>
-                      </button>
-                      <button type="button" class="builder-service-chip" data-service="legal" aria-pressed="false">
-                        <span class="builder-service-chip-ico" aria-hidden="true">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3 4 7v5c0 5 4 9 8 11 4-2 8-6 8-11V7l-8-4Z" stroke-linejoin="round"/></svg>
-                        </span>
-                        <span data-key="builder_svc_legal">Legal Services</span>
-                      </button>
-                      <button type="button" class="builder-service-chip" data-service="booking" aria-pressed="false">
-                        <span class="builder-service-chip-ico" aria-hidden="true">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18" stroke-linecap="round"/></svg>
-                        </span>
-                        <span data-key="builder_svc_booking">Booking</span>
-                      </button>
-                      <button type="button" class="builder-service-chip" data-service="shop" aria-pressed="false">
-                        <span class="builder-service-chip-ico" aria-hidden="true">
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4H6Z" stroke-linejoin="round"/><path d="M3 6h18M16 10a4 4 0 1 1-8 0" stroke-linecap="round"/></svg>
-                        </span>
-                        <span data-key="builder_svc_shop">Online Shop</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
                 <div class="builder-pack">
                   <p class="builder-pack__label" data-key="builder_step_1_title">Project type</p>
                   <div class="builder-pack__chips" data-magnetic-group="builder-projects">

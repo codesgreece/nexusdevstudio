@@ -2687,8 +2687,7 @@
 
     function updateCta() {
       if (!ctaBtn) return;
-      var nameOk = businessInput ? sanitizeBusinessName(businessInput.value).length > 0 : false;
-      ctaBtn.disabled = !nameOk;
+      ctaBtn.disabled = !state.project;
     }
 
     function triggerPreviewRebuild() {
@@ -2840,31 +2839,24 @@
     }
 
     function buildLaunchMessage() {
-      var name = businessInput ? sanitizeBusinessName(businessInput.value) : "";
-      var styleLabel = wizardStyle ? tk("builder_style_" + wizardStyle) : "—";
-      var svcLabels = wizardServices
-        .map(function (id) {
-          return tk("builder_svc_" + id);
+      var typeStr = state.project ? tk(projectTitleKey(state.project)) : "—";
+      var featStr = FEATURE_ORDER.filter(function (f) {
+        return state.features.indexOf(f) >= 0;
+      })
+        .map(function (f) {
+          return tk(featureTitleKey(f));
         })
         .join(", ");
-      var msg = tk("builder_launch_msg")
-        .replace("{name}", name || "—")
-        .replace("{style}", styleLabel)
-        .replace("{services}", svcLabels || "—");
-      if (state.project) {
-        msg +=
-          "\n\n" +
-          tk("builder_launch_msg_project")
-            .replace("{type}", tk(projectTitleKey(state.project)))
-            .replace("{price}", formatEuro(computeOneTime()));
-      }
-      return msg;
+      if (!featStr) featStr = tk("builder_sum_features_none");
+      return tk("builder_wa_msg")
+        .replace("{type}", typeStr)
+        .replace("{features}", featStr)
+        .replace("{price}", formatEuro(computeOneTime()));
     }
 
     if (ctaBtn) {
       ctaBtn.addEventListener("click", function () {
-        var nameOk = businessInput ? sanitizeBusinessName(businessInput.value).length > 0 : false;
-        if (!nameOk) return;
+        if (!state.project) return;
         var msg = buildLaunchMessage();
         var url =
           "https://wa.me/" + WHATSAPP_E164 + "?text=" + encodeURIComponent(msg);
