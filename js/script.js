@@ -2300,7 +2300,9 @@
       if (!hasWizardEngagement()) return;
       state.project = "business";
       root.querySelectorAll(".builder-tile[data-project]").forEach(function (x) {
-        x.classList.toggle("is-selected", x.getAttribute("data-project") === "business");
+        var on = x.getAttribute("data-project") === "business";
+        x.classList.toggle("is-selected", on);
+        x.classList.toggle("is-flipped", on);
       });
       refreshSummary();
       syncAmount();
@@ -2752,7 +2754,9 @@
         var p = tile.getAttribute("data-project");
         state.project = p;
         root.querySelectorAll(".builder-tile[data-project]").forEach(function (x) {
-          x.classList.toggle("is-selected", x.getAttribute("data-project") === p);
+          var on = x.getAttribute("data-project") === p;
+          x.classList.toggle("is-selected", on);
+          x.classList.toggle("is-flipped", on);
         });
         playSelectTick();
         runSelectionWtf(tile);
@@ -2767,6 +2771,7 @@
       tile.addEventListener("click", function () {
         var f = tile.getAttribute("data-feature");
         tile.classList.toggle("is-selected");
+        tile.classList.toggle("is-flipped", tile.classList.contains("is-selected"));
         if (tile.classList.contains("is-selected")) {
           if (state.features.indexOf(f) < 0) state.features.push(f);
           try {
