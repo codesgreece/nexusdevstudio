@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=compact2" />
+    <link rel="stylesheet" href="css/styles.css?v=builder-rack3" />
   </head>
   <body>
     <svg
@@ -1280,53 +1280,67 @@
                   </div>
                 </div>
 
-                <div class="builder-card builder-card--section">
-                  <h3 class="builder-panel-title">
-                    <span class="builder-step-tag" data-key="builder_step_tag_1">Step 1</span>
-                    <span data-key="builder_step_1_title">Project type</span>
-                  </h3>
-                  <div class="builder-grid builder-grid--projects" data-magnetic-group="builder-projects">
-                    <button type="button" class="builder-tile magnetic" data-project="landing">
+                <div class="builder-rack builder-rack--projects">
+                  <header class="builder-rack__head">
+                    <span class="builder-rack__index" aria-hidden="true">01</span>
+                    <div class="builder-rack__copy">
+                      <h3 class="builder-rack__title">
+                        <span class="builder-step-tag" data-key="builder_step_tag_1">Step 1</span>
+                        <span data-key="builder_step_1_title">Project type</span>
+                      </h3>
+                      <p class="builder-rack__lead" data-key="builder_step_1_hint">Pick one package — price updates live.</p>
+                    </div>
+                  </header>
+                  <div class="builder-rack__list builder-grid builder-grid--projects" data-magnetic-group="builder-projects">
+                    <button type="button" class="builder-tile builder-tile--row magnetic" data-project="landing">
                       <span class="builder-tile-glow" aria-hidden="true"></span>
                       <span class="builder-tile-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke-linecap="round"/><path d="M4 4v15.5A2.5 2.5 0 0 0 6.5 22H20V4H4z" stroke-linejoin="round"/><path d="M8 7h8M8 11h6" stroke-linecap="round"/></svg>
                       </span>
-                      <span class="builder-tile-title" data-key="builder_pt_landing_t">Landing Page</span>
-                      <span class="builder-tile-price" data-key="builder_pt_landing_p">€250</span>
-                      <span class="builder-tile-desc" data-key="builder_pt_landing_d">High-impact single page for campaigns and launches.</span>
+                      <span class="builder-tile-main">
+                        <span class="builder-tile-title" data-key="builder_pt_landing_t">Landing Page</span>
+                        <span class="builder-tile-desc" data-key="builder_pt_landing_d">High-impact single page for campaigns and launches.</span>
+                      </span>
+                      <span class="builder-tile-price" data-key="builder_pt_landing_p">€175</span>
                       <span class="builder-tile-check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
-                    <button type="button" class="builder-tile magnetic" data-project="business">
+                    <button type="button" class="builder-tile builder-tile--row magnetic" data-project="business">
                       <span class="builder-tile-glow" aria-hidden="true"></span>
                       <span class="builder-tile-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4M9 9v0M9 13v0M9 17v0" stroke-linecap="round" stroke-linejoin="round"/></svg>
                       </span>
-                      <span class="builder-tile-title" data-key="builder_pt_biz_t">Business Website</span>
-                      <span class="builder-tile-price" data-key="builder_pt_biz_p">€400</span>
-                      <span class="builder-tile-desc" data-key="builder_pt_biz_d">Full site structure for credibility and conversions.</span>
+                      <span class="builder-tile-main">
+                        <span class="builder-tile-title" data-key="builder_pt_biz_t">Business Website</span>
+                        <span class="builder-tile-desc" data-key="builder_pt_biz_d">Full site structure for credibility and conversions.</span>
+                      </span>
+                      <span class="builder-tile-price" data-key="builder_pt_biz_p">€275</span>
                       <span class="builder-tile-check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
-                    <button type="button" class="builder-tile magnetic" data-project="ecommerce">
+                    <button type="button" class="builder-tile builder-tile--row magnetic" data-project="ecommerce">
                       <span class="builder-tile-glow" aria-hidden="true"></span>
                       <span class="builder-tile-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4H6Z" stroke-linejoin="round"/><path d="M3 6h18M16 10a4 4 0 1 1-8 0" stroke-linecap="round"/></svg>
                       </span>
-                      <span class="builder-tile-title" data-key="builder_pt_ecom_t">E-commerce</span>
-                      <span class="builder-tile-price" data-key="builder_pt_ecom_p">€800</span>
-                      <span class="builder-tile-desc" data-key="builder_pt_ecom_d">Catalogue, checkout, and storefront polish.</span>
+                      <span class="builder-tile-main">
+                        <span class="builder-tile-title" data-key="builder_pt_ecom_t">E-commerce</span>
+                        <span class="builder-tile-desc" data-key="builder_pt_ecom_d">Catalogue, checkout, and storefront polish.</span>
+                      </span>
+                      <span class="builder-tile-price" data-key="builder_pt_ecom_p">€750</span>
                       <span class="builder-tile-check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
-                    <button type="button" class="builder-tile magnetic" data-project="booking">
+                    <button type="button" class="builder-tile builder-tile--row magnetic" data-project="booking">
                       <span class="builder-tile-glow" aria-hidden="true"></span>
                       <span class="builder-tile-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 16h2M15 16h2M9 12h2M15 12h2" stroke-linecap="round"/></svg>
                       </span>
-                      <span class="builder-tile-title" data-key="builder_pt_book_t">Booking Platform</span>
-                      <span class="builder-tile-price" data-key="builder_pt_book_p">€600</span>
-                      <span class="builder-tile-desc" data-key="builder_pt_book_d">Scheduling-first experience for services and venues.</span>
+                      <span class="builder-tile-main">
+                        <span class="builder-tile-title" data-key="builder_pt_book_t">Booking Platform</span>
+                        <span class="builder-tile-desc" data-key="builder_pt_book_d">Scheduling-first experience for services and venues.</span>
+                      </span>
+                      <span class="builder-tile-price" data-key="builder_pt_book_p">€550</span>
                       <span class="builder-tile-check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
-                    <button type="button" class="builder-tile magnetic" data-project="rent_service">
+                    <button type="button" class="builder-tile builder-tile--row magnetic" data-project="rent_service">
                       <span class="builder-tile-glow" aria-hidden="true"></span>
                       <span class="builder-tile-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -1335,12 +1349,14 @@
                           <path d="M8 11h8M8 15h5" stroke-linecap="round" />
                         </svg>
                       </span>
-                      <span class="builder-tile-title" data-key="builder_pt_rent_t">Rent a service</span>
+                      <span class="builder-tile-main">
+                        <span class="builder-tile-title" data-key="builder_pt_rent_t">Rent a service</span>
+                        <span class="builder-tile-desc" data-key="builder_pt_rent_d">Lightweight page to sell or rent your service online.</span>
+                      </span>
                       <span class="builder-tile-price" data-key="builder_pt_rent_p">€50</span>
-                      <span class="builder-tile-desc" data-key="builder_pt_rent_d">Lightweight page to sell or rent your service online.</span>
                       <span class="builder-tile-check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
-                    <button type="button" class="builder-tile magnetic" data-project="web_mobile">
+                    <button type="button" class="builder-tile builder-tile--row magnetic" data-project="web_mobile">
                       <span class="builder-tile-glow" aria-hidden="true"></span>
                       <span class="builder-tile-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -1350,12 +1366,14 @@
                           <path d="M18 18h.01" stroke-linecap="round" stroke-width="2" />
                         </svg>
                       </span>
-                      <span class="builder-tile-title" data-key="builder_pt_webmob_t">Web &amp; Mobile App</span>
-                      <span class="builder-tile-price" data-key="builder_pt_webmob_p">from €1,500</span>
-                      <span class="builder-tile-desc" data-key="builder_pt_webmob_d">Full-stack web plus native or cross-platform mobile.</span>
+                      <span class="builder-tile-main">
+                        <span class="builder-tile-title" data-key="builder_pt_webmob_t">Web &amp; Mobile App</span>
+                        <span class="builder-tile-desc" data-key="builder_pt_webmob_d">Full-stack web plus native or cross-platform mobile.</span>
+                      </span>
+                      <span class="builder-tile-price" data-key="builder_pt_webmob_p">€1,550</span>
                       <span class="builder-tile-check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
-                    <button type="button" class="builder-tile magnetic" data-project="mobile_native">
+                    <button type="button" class="builder-tile builder-tile--row magnetic" data-project="mobile_native">
                       <span class="builder-tile-glow" aria-hidden="true"></span>
                       <span class="builder-tile-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -1363,46 +1381,59 @@
                           <path d="M12 18h.01" stroke-linecap="round" stroke-width="2" />
                         </svg>
                       </span>
-                      <span class="builder-tile-title" data-key="builder_pt_mobile_native_t">Mobile app</span>
-                      <span class="builder-tile-price" data-key="builder_pt_mobile_native_p">from €700</span>
-                      <span class="builder-tile-desc" data-key="builder_pt_mobile_native_d">iOS &amp; Android experience built around your product.</span>
+                      <span class="builder-tile-main">
+                        <span class="builder-tile-title" data-key="builder_pt_mobile_native_t">Mobile app</span>
+                        <span class="builder-tile-desc" data-key="builder_pt_mobile_native_d">iOS &amp; Android experience built around your product.</span>
+                      </span>
+                      <span class="builder-tile-price" data-key="builder_pt_mobile_native_p">€455</span>
                       <span class="builder-tile-check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
                   </div>
                 </div>
 
-                <div class="builder-card builder-card--section">
-                  <h3 class="builder-panel-title">
-                    <span class="builder-step-tag" data-key="builder_step_tag_2">Step 2</span>
-                    <span data-key="builder_addons_title">Features</span>
-                  </h3>
-                  <p class="builder-panel-hint" data-key="builder_step_2_hint">Toggle what you need — pricing updates instantly.</p>
-                  <div class="builder-grid builder-grid--addons" data-magnetic-group="builder-addons">
-                    <button type="button" class="builder-tile builder-tile--toggle magnetic" data-feature="booking_sys">
+                <div class="builder-rack builder-rack--features">
+                  <header class="builder-rack__head">
+                    <span class="builder-rack__index" aria-hidden="true">02</span>
+                    <div class="builder-rack__copy">
+                      <h3 class="builder-rack__title">
+                        <span class="builder-step-tag" data-key="builder_step_tag_2">Step 2</span>
+                        <span data-key="builder_addons_title">Features</span>
+                      </h3>
+                      <p class="builder-rack__lead" data-key="builder_step_2_hint">Toggle what you need — pricing updates instantly.</p>
+                    </div>
+                  </header>
+                  <div class="builder-rack__list builder-grid builder-grid--addons" data-magnetic-group="builder-addons">
+                    <button type="button" class="builder-tile builder-tile--row builder-tile--toggle magnetic" data-feature="booking_sys">
                       <span class="builder-tile-glow" aria-hidden="true"></span>
                       <span class="builder-tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M8 6h8M6 10h12v10H6z" stroke-linejoin="round"/></svg></span>
-                      <span class="builder-tile-title" data-key="builder_ft_book_t">Booking System</span>
+                      <span class="builder-tile-main">
+                        <span class="builder-tile-title" data-key="builder_ft_book_t">Booking System</span>
+                        <span class="builder-tile-desc" data-key="builder_ft_book_d">Reservations, calendars, and availability rules.</span>
+                      </span>
                       <span class="builder-tile-addon" data-key="builder_ft_book_p">+€150</span>
-                      <span class="builder-tile-desc" data-key="builder_ft_book_d">Reservations, calendars, and availability rules.</span>
                       <span class="builder-tile-check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
-                    <button type="button" class="builder-tile builder-tile--toggle magnetic" data-feature="admin">
+                    <button type="button" class="builder-tile builder-tile--row builder-tile--toggle magnetic" data-feature="admin">
                       <span class="builder-tile-glow" aria-hidden="true"></span>
                       <span class="builder-tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="11" width="7" height="10" rx="1"/><rect x="3" y="15" width="7" height="6" rx="1"/></svg></span>
-                      <span class="builder-tile-title" data-key="builder_ft_ad_t">Admin Dashboard</span>
+                      <span class="builder-tile-main">
+                        <span class="builder-tile-title" data-key="builder_ft_ad_t">Admin Dashboard</span>
+                        <span class="builder-tile-desc" data-key="builder_ft_ad_d">Management UI for content, orders, or users.</span>
+                      </span>
                       <span class="builder-tile-addon" data-key="builder_ft_ad_p">+€200</span>
-                      <span class="builder-tile-desc" data-key="builder_ft_ad_d">Management UI for content, orders, or users.</span>
                       <span class="builder-tile-check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
-                    <button type="button" class="builder-tile builder-tile--toggle magnetic" data-feature="seo">
+                    <button type="button" class="builder-tile builder-tile--row builder-tile--toggle magnetic" data-feature="seo">
                       <span class="builder-tile-glow" aria-hidden="true"></span>
                       <span class="builder-tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19V5M9 19V9M14 19v-6M19 19V3" stroke-linecap="round"/></svg></span>
-                      <span class="builder-tile-title" data-key="builder_ft_seo_t">SEO Optimization</span>
+                      <span class="builder-tile-main">
+                        <span class="builder-tile-title" data-key="builder_ft_seo_t">SEO Optimization</span>
+                        <span class="builder-tile-desc" data-key="builder_ft_seo_d">Structure, metadata, and discoverability.</span>
+                      </span>
                       <span class="builder-tile-addon" data-key="builder_ft_seo_p">+€100</span>
-                      <span class="builder-tile-desc" data-key="builder_ft_seo_d">Structure, metadata, and discoverability.</span>
                       <span class="builder-tile-check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
-                    <button type="button" class="builder-tile builder-tile--toggle magnetic" data-feature="i18n">
+                    <button type="button" class="builder-tile builder-tile--row builder-tile--toggle magnetic" data-feature="i18n">
                       <span class="builder-tile-glow" aria-hidden="true"></span>
                       <span class="builder-tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
                       <span class="builder-tile-title" data-key="builder_ft_i18n_t">Multi-language</span>
@@ -1410,7 +1441,7 @@
                       <span class="builder-tile-desc" data-key="builder_ft_i18n_d">Localized content and routing strategy.</span>
                       <span class="builder-tile-check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
-                    <button type="button" class="builder-tile builder-tile--toggle magnetic" data-feature="backend">
+                    <button type="button" class="builder-tile builder-tile--row builder-tile--toggle magnetic" data-feature="backend">
                       <span class="builder-tile-glow" aria-hidden="true"></span>
                       <span class="builder-tile-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -1424,7 +1455,7 @@
                       <span class="builder-tile-desc" data-key="builder_ft_backend_d">APIs, database, and server logic behind your product.</span>
                       <span class="builder-tile-check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
-                    <button type="button" class="builder-tile builder-tile--toggle magnetic" data-feature="loyalty">
+                    <button type="button" class="builder-tile builder-tile--row builder-tile--toggle magnetic" data-feature="loyalty">
                       <span class="builder-tile-glow" aria-hidden="true"></span>
                       <span class="builder-tile-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -1436,7 +1467,7 @@
                       <span class="builder-tile-desc" data-key="builder_ft_loyalty_d">Rewards, tiers, and retention for returning customers.</span>
                       <span class="builder-tile-check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                     </button>
-                    <button type="button" class="builder-tile builder-tile--toggle magnetic" data-feature="domain">
+                    <button type="button" class="builder-tile builder-tile--row builder-tile--toggle magnetic" data-feature="domain">
                       <span class="builder-tile-glow" aria-hidden="true"></span>
                       <span class="builder-tile-icon" aria-hidden="true">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
